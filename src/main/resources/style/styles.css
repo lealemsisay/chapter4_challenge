@@ -1,0 +1,163 @@
+/* Global Variables-like consistency */
+* {
+    -fx-primary-color: #0078d7; /* Standard Windows Blue */
+    -fx-secondary-color: #333333; /* Dark Grey for buttons */
+    -fx-main-bg-color: #ffffff; /* Pure White for Light Mode */
+    -fx-text-color: #000000;
+    -fx-light-grey: #e0e0e0;
+}
+
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: -fx-main-bg-color;
+}
+
+/* List View Styling */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: -fx-light-grey;
+    -fx-border-radius: 3;
+}
+
+.list-cell {
+    -fx-padding: 8px;
+    -fx-text-fill: -fx-text-color;
+}
+
+.list-cell:even {
+    -fx-background-color: white;
+}
+
+.list-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: black;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-padding: 5 15 5 15;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.button:pressed {
+    -fx-background-color: #d0d0d0;
+}
+
+/* Text Inputs */
+.text-field, .text-area {
+    -fx-background-color: white;
+    -fx-border-color: -fx-light-grey;
+    -fx-border-radius: 3;
+    -fx-padding: 5;
+    -fx-text-fill: -fx-text-color;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: -fx-primary-color;
+    -fx-background-color: white;
+}
+
+/* Toggle Button */
+.toggle-button {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: black;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3;
+    -fx-cursor: hand;
+}
+
+.toggle-button:selected {
+    -fx-background-color: -fx-secondary-color;
+    -fx-text-fill: white;
+}
+
+/* Dark Mode Overrides */
+.dark-mode {
+    -fx-background-color: #1e1e1e; /* Deep Dark Grey */
+    -fx-text-color: #ffffff;
+    -fx-control-inner-background: #1e1e1e;
+}
+
+.dark-mode .list-view {
+    -fx-background-color: #252526;
+    -fx-border-color: #3e3e42;
+}
+
+.dark-mode .list-cell {
+    -fx-text-fill: white;
+}
+
+.dark-mode .list-cell:even {
+    -fx-background-color: #252526;
+}
+
+.dark-mode .list-cell:odd {
+    -fx-background-color: #1e1e1e;
+}
+
+.dark-mode .list-cell:filled:selected:focused, .dark-mode .list-cell:filled:selected {
+    -fx-background-color: -fx-primary-color;
+}
+
+.dark-mode .text-field, .dark-mode .text-area {
+    -fx-background-color: #252526;
+    -fx-text-fill: white;
+    -fx-border-color: #3e3e42;
+}
+
+.dark-mode .label {
+    -fx-text-fill: white;
+}
+
+.dark-mode .button {
+    -fx-background-color: #3e3e42;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+}
+
+.dark-mode .button:hover {
+    -fx-background-color: #505050;
+}
+
+.dark-mode .toggle-button {
+    -fx-background-color: #3e3e42;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+}
+
+.dark-mode .toggle-button:selected {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+/* HTML Editor Styling (Outer container) */
+.html-editor {
+    -fx-border-color: -fx-light-grey;
+    -fx-border-width: 1;
+}
+
+.dark-mode .html-editor {
+    -fx-border-color: #3e3e42;
+}
+
+.dark-mode .html-editor .tool-bar {
+    -fx-background-color: #252526;
+}
+
+.dark-mode .html-editor .button {
+    -fx-background-color: #3e3e42;
+}
